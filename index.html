@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="deshollinado.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deshollinador Mallorca - Chimeneas Limpias y Seguras</title>
+    
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Carga de la fuente Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icono formal para la pestaña (Casa) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22 fill=%22%231e3a8a%22><path d=%22M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z%22 /></svg>">
+
+</head>
+<body class="bg-gray-100">
+
+    <!-- ===== HEADER / BARRA DE NAVEGACIÓN ===== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <!-- Logo o Nombre del Negocio (Formal) -->
+            <div class="text-2xl font-bold text-gray-800 mb-3 sm:mb-0">
+                <!-- Icono de escudo para seguridad -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block -mt-1 text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5.09.052.052 0 002.062 5.176C1.942 5.378.89 6.828.89 8.614V11.5c0 3.807 3.52 6.865 8.928 8.44A1.85 1.85 0 0010 20a1.85 1.85 0 00.182-1.046C15.59 17.365 19.11 14.307 19.11 10.5V7.614c0-1.786-1.052-3.236-1.172-3.438a.052.052 0 00-.104-.086A11.953 11.953 0 0110 1.944zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                </svg>
+                <span class="ml-1">Deshollinador Mallorca</span>
+            </div>
+            
+            <!-- Números de Teléfono (Ambos con Llamada y WhatsApp) -->
+            <div class="flex flex-col sm:flex-row sm:space-x-6 text-center">
+                
+                <!-- Número 1 -->
+                <div class="text-lg mb-2 sm:mb-0">
+                    <span class="font-semibold text-gray-800">615 60 15 47</span>
+                    <!-- Icono Llamar -->
+                    <a href="tel:615601547" class="inline-block align-middle ml-2 text-slate-700 hover:text-blue-800" title="Llamar">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                        </svg>
+                    </a>
+                    <!-- Icono WhatsApp -->
+                    <a href="https://wa.me/34600123456" target="_blank" class="inline-block align-middle ml-1 text-green-600 hover:text-green-500" title="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.595 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Número 2 -->
+                <div class="text-lg">
+                    <span class="font-semibold text-gray-800">656 60 01 51</span>
+                    <!-- Icono Llamar -->
+                    <a href="tel:656600151" class="inline-block align-middle ml-2 text-slate-700 hover:text-blue-800" title="Llamar">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                        </svg>
+                    </a>
+                    <!-- Icono WhatsApp -->
+                    <a href="https://wa.me/34600789012" target="_blank" class="inline-block align-middle ml-1 text-green-600 hover:text-green-500" title="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.595 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION / SECCIÓN PRINCIPAL ===== -->
+    <main class="hero-bg text-white">
+        <div class="container mx-auto px-6 py-24 md:py-48 text-center">
+            <!-- Slogan Principal (Más formal) -->
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+                Mantén tu hogar cálido y seguro todo el invierno
+            </h1>
+            
+            <!-- Llamada a la Acción (CTA) - (Color formal) -->
+            <a href="#contacto" class="mt-10 inline-block bg-blue-800 text-white font-bold py-4 px-10 rounded-lg text-lg hover:bg-blue-900 transition duration-300 shadow-lg">
+                Solicitar Presupuesto
+            </a>
+        </div>
+    </main>
+
+    <!-- ===== SECCIÓN DE SERVICIOS Y UBICACIÓN ===== -->
+    <section class="bg-gray-50 py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Servicio Profesional en Toda Mallorca</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Nos desplazamos por toda la isla. <strong class="text-gray-800">Vamos a cada rincón de Mallorca</strong> para garantizar la seguridad y eficiencia de tu chimenea.
+                </p>
+            </div>
+            <div class = "galeria w-full mb-16">
+                <img src = "deshollinado1.jpg">
+                <img src = "deshollinado2.jpg">
+                <img src = "deshollinado3.jpg">
+                <img src = "deshollinado4.jpg">
+                <img src = "deshollinado5.jpg">
+            </div>
+
+            <!-- Lista de Beneficios/Servicios (Iconos con color formal) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Beneficio 1: Seguridad -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <!-- Icono de Seguridad -->
+                    <svg class="w-16 h-16 mx-auto text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-4">Previene Incendios</h3>
+                    <p class="text-gray-600 mt-2">
+                        Eliminamos el hollín y la creosota, la principal causa de incendios en chimeneas. Tu seguridad es nuestra prioridad.
+                    </p>
+                </div>
+
+                <!-- Beneficio 2: Eficiencia -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <!-- Icono de Eficiencia (Calor) -->
+                    <svg class="w-16 h-16 mx-auto text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1.001A3.75 3.75 0 0012 18z" />
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-4">Mejora la Eficiencia</h3>
+                    <p class="text-gray-600 mt-2">
+                        Una chimenea limpia calienta más, consume menos leña y reduce la contaminación. Ahorra dinero y cuida el medio ambiente.
+                    </p>
+                </div>
+
+                <!-- Beneficio 3: Cobertura Total -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <!-- Icono de Cobertura (Mapa) -->
+                    <svg class="w-16 h-16 mx-auto text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.875 5.688c-.748.374-1.125 1.17-1.125 1.946V18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-4">Toda Mallorca</h3>
+                    <p class="text-gray-600 mt-2">
+                        Desde Palma hasta Pollença, de Andratx a Artà. Damos servicio a toda la isla, sin excepciones.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN DE CONTACTO (CTA FINAL) - (Estilo formal) ===== -->
+    <section id="contacto" class="bg-slate-800 text-white py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">No espere a que sea tarde.</h2>
+            <p class="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">
+                Contacte con nosotros hoy mismo para un presupuesto gratuito. 
+                Estamos listos para atenderle.
+            </p>
+
+            <!-- Nuevo Contenedor Formal de Contacto -->
+            <div class="mt-16 max-w-4xl mx-auto bg-white text-gray-800 rounded-lg shadow-xl p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    
+                    <!-- Teléfono 1 -->
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-gray-500 uppercase tracking-wider">Contacto 1</h3>
+                        <p class="text-4xl font-bold text-slate-800 my-3">
+                           615 60 15 47
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-3">
+                            <a href="tel:615601547" class="w-full sm:w-auto inline-block bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-900 transition duration-300">
+                                Llamar Ahora
+                            </a>
+                            <a href="https://wa.me/34615601547" target="_blank" class="w-full sm:w-auto inline-block bg-green-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300">
+                                Enviar WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Teléfono 2 -->
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-gray-500 uppercase tracking-wider">Contacto 2</h3>
+                        <p class="text-4xl font-bold text-slate-800 my-3">
+                           656 60 01 51
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-3">
+                            <a href="tel:656600151" class="w-full sm:w-auto inline-block bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-900 transition duration-300">
+                                Llamar Ahora
+                            </a>
+                            <a href="https://wa.me/34656600151" target="_blank" class="w-full sm:w-auto inline-block bg-green-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300">
+                                Enviar WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER / PIE DE PÁGINA ===== -->
+    <footer class="bg-gray-900 text-gray-400 p-8 text-center">
+        <p class="font-semibold">&copy; 2025 Deshollinador Mallorca</p>
+        <p class="text-sm mt-2">Deshollinador. Tu chimenea limpia, tu hogar seguro.</p>
+    </footer>
+
+</body>
+</html>
