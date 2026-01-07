@@ -1,0 +1,37 @@
+ .hero-bg {
+
+            /* Usamos un degradado oscuro sobre una imagen de fondo para que el texto resalte */
+
+            /* Reemplaza la URL por una foto real de una chimenea o un tejado de Mallorca */
+
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+
+                        url('https://placehold.co/1920x1080/505050/333333?text=Hogar+Limpio+y+Seguro');
+
+            background-size: cover;
+
+            background-position: center;
+
+             }
+
+.galeria {
+    display: flex;
+    width: 100%;       /* Ocupa todo el ancho de la ventana */
+    height: 430px;     /* Altura fija */
+    overflow: hidden;  /* Para que no se salga nada */
+}
+
+.galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.galeria img:hover {
+    cursor: crosshair;
+    width: 300px;      /* El efecto acordeón */
+    opacity: 1;
+    filter: contrast(120%);
+}
